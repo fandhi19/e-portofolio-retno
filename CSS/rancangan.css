@@ -1138,63 +1138,73 @@ a {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.8fr 1.1fr 1.2fr 1.6fr;
+  gap: 36px;
   margin-bottom: 50px;
+  align-items: start;
 }
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .footer-logo img {
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 .footer-logo h3 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.3px;
 }
-.footer-logo h3 span {
+.footer-logo h3 span,
+.footer-logo span {
   color: var(--primary-orange);
 }
-.footer-desc {
+.footer-desc,
+.brand-desc {
   color: var(--text-muted);
   font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.65;
+  margin-bottom: 22px;
 }
 .social-neon {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 .neon-btn {
   width: 38px;
   height: 38px;
   border-radius: 50%;
   border: 1px solid var(--border-glass-strong);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   color: var(--text-main);
-  transition: 0.3s;
+  transition: var(--transition-bouncy);
+  background: rgba(255, 255, 255, 0.03);
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 .neon-btn:hover {
   background: var(--primary-gradient);
   border-color: transparent;
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 94, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 94, 0, 0.45);
 }
 .footer-links h4,
 .footer-contact h4 {
   color: #fff;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 20px;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 .footer-links h4::after,
 .footer-contact h4::after {
@@ -1203,41 +1213,85 @@ a {
   bottom: 0;
   left: 0;
   width: 35px;
-  height: 2px;
+  height: 2.5px;
   background: var(--primary-gradient);
+  border-radius: 2px;
 }
 .footer-links ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .footer-links ul li {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 .footer-links ul li a {
   color: var(--text-muted);
-  font-size: 0.88rem;
-  transition: 0.3s;
-  display: flex;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+}
+.footer-links ul li a i {
+  font-size: 0.75rem;
+  color: var(--primary-orange);
+  transition: transform 0.3s ease;
 }
 .footer-links ul li a:hover {
-  color: var(--primary-orange);
+  color: #fff;
   transform: translateX(4px);
+}
+.footer-links ul li a:hover i {
+  transform: translateX(2px);
 }
 .footer-contact p {
   color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.6;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 .footer-contact p i {
   color: var(--primary-orange);
-  margin-right: 8px;
+  font-size: 1rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.footer-contact p strong {
+  color: #fff;
+}
+.footer-profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 20px;
+  border-radius: 25px;
+  background: var(--primary-gradient);
+  color: #ffffff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-bouncy);
+  box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);
+  margin-top: 14px;
+  width: fit-content;
+  white-space: nowrap;
+}
+.footer-profile-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 94, 0, 0.5);
+  color: #ffffff !important;
 }
 .footer-copyright {
   text-align: center;
   color: var(--text-muted);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 25px;
+  margin-top: 20px;
   font-size: 0.88rem;
 }
 
@@ -1247,7 +1301,7 @@ a {
 @media (max-width: 992px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 35px;
   }
 }
 
@@ -1346,6 +1400,19 @@ a {
   }
   .footer-links ul li a {
     justify-content: center;
+  }
+  .footer-contact p {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-profile-btn {
+    margin: 14px auto 0 auto;
+  }
+  .logouny {
+    margin-left: -20px;
+  }
+  .brand-name {
+    margin-left: 1px;
   }
 }
 
