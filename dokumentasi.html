@@ -62,9 +62,7 @@
       <div class="page-header fade-up" style="animation-delay: 0.15s">
         <span class="badge-sport"><i class="fa-solid fa-camera-retro"></i> Galeri Kegiatan Praktik Lapangan</span>
         <h1 class="page-title">Dokumentasi <span class="text-gradient">PPL 1 &amp; PPL 2</span></h1>
-        <p class="page-subtitle">
-          Rekam jejak visual perjalanan transformasi mengajar, kolaborasi manajerial sekolah, pelayanan kebugaran, dan interaksi bermakna dalam membimbing peserta didik di SMA Negeri 4 Yogyakarta.
-        </p>
+        <p class="page-subtitle">Rekam jejak visual perjalanan transformasi mengajar, kolaborasi manajerial sekolah, pelayanan kebugaran, dan interaksi bermakna dalam membimbing peserta didik di SMA Negeri 4 Yogyakarta.</p>
       </div>
 
       <!-- Sub Menu Tab PPL 1 & PPL 2 -->
@@ -188,25 +186,26 @@
             <span class="filter-bar-hint">Menampilkan 5 kartu kegiatan dengan total 6 arsip dokumentasi (tersedia kartu slideshow)</span>
           </div>
           <div class="filter-bar">
-            <button class="filter-btn active" onclick="filterDocs('pane-ppl1', 'all', this)">
-              <i class="fa-solid fa-border-all"></i> Semua <span class="filter-badge">5</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl1', 'mengajar', this)">
-              <i class="fa-solid fa-person-running"></i> Praktik Mengajar <span class="filter-badge">2</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl1', 'asesmen', this)">
-              <i class="fa-solid fa-clipboard-check"></i> Penilaian &amp; Asesmen <span class="filter-badge">1</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl1', 'visitasi', this)">
-              <i class="fa-solid fa-handshake-angle"></i> Kunjungan &amp; Orientasi <span class="filter-badge">2</span>
-            </button>
+            <button class="filter-btn active" onclick="filterDocs('pane-ppl1', 'all', this)"><i class="fa-solid fa-border-all"></i> Semua <span class="filter-badge">5</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl1', 'mengajar', this)"><i class="fa-solid fa-person-running"></i> Praktik Mengajar <span class="filter-badge">2</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl1', 'asesmen', this)"><i class="fa-solid fa-clipboard-check"></i> Penilaian &amp; Asesmen <span class="filter-badge">1</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl1', 'visitasi', this)"><i class="fa-solid fa-handshake-angle"></i> Kunjungan &amp; Orientasi <span class="filter-badge">2</span></button>
           </div>
         </div>
 
         <!-- Grid Galeri PPL 1 -->
         <div class="doc-grid">
           <!-- Card PPL 1 - 1: Praktik Mengajar -->
-          <div class="doc-card fade-up" id="card-ppl1-1" data-category="mengajar" data-img="IMG/praktik.jpeg" data-badge="Praktik Mengajar" data-title="Praktik Mengajar Bola Basket (Under Ring)" data-subtitle="Pembelajaran PJOK Fase F - Kelas XI F6" data-desc="Pelaksanaan praktik pembelajaran PJOK materi Bola Basket fase F di kelas XI F6 dengan fokus teknik dasar under ring, lay-up shoot, dan rotasi kerja sama kelompok.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl1-1"
+            data-category="mengajar"
+            data-img="IMG/praktik.jpeg"
+            data-badge="Praktik Mengajar"
+            data-title="Praktik Mengajar Bola Basket (Under Ring)"
+            data-subtitle="Pembelajaran PJOK Fase F - Kelas XI F6"
+            data-desc="Pelaksanaan praktik pembelajaran PJOK materi Bola Basket fase F di kelas XI F6 dengan fokus teknik dasar under ring, lay-up shoot, dan rotasi kerja sama kelompok."
+          >
             <div class="doc-card-thumb" onclick="openCardLightbox(this.closest('.doc-card'))">
               <span class="doc-card-badge badge-tag-orange"><i class="fa-solid fa-person-running"></i> Praktik Mengajar</span>
               <img src="IMG/praktik.jpeg" alt="Praktik Mengajar Bola Basket" loading="lazy" />
@@ -230,16 +229,34 @@
           </div>
 
           <!-- Card PPL 1 - 2: Penilaian & Asesmen (Slideshow 2 Foto) -->
-          <div class="doc-card fade-up" id="card-ppl1-2" data-category="asesmen" data-badge="Penilaian &amp; Asesmen" data-title="Penilaian &amp; Asesmen Pembelajaran PJOK" data-subtitle="Asesmen Keterampilan Bola Basket &amp; Atletik Lari" data-desc="Pengambilan data asesmen unjuk kerja psikomotorik siswa melalui rangkaian teknik permainan bola basket serta pengujian performa daya tahan fisik lari 400 meter di lapangan sekolah.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl1-2"
+            data-category="asesmen"
+            data-badge="Penilaian &amp; Asesmen"
+            data-title="Penilaian &amp; Asesmen Pembelajaran PJOK"
+            data-subtitle="Asesmen Keterampilan Bola Basket &amp; Atletik Lari"
+            data-desc="Pengambilan data asesmen unjuk kerja psikomotorik siswa melalui rangkaian teknik permainan bola basket serta pengujian performa daya tahan fisik lari 400 meter di lapangan sekolah."
+          >
             <div class="doc-card-thumb has-slideshow">
               <span class="doc-card-badge badge-tag-cyan"><i class="fa-solid fa-clipboard-check"></i> Asesmen PJOK</span>
               <span class="slide-count-badge"><i class="fa-solid fa-layer-group"></i> <span class="current-slide-num">1</span>/2 Foto</span>
 
               <div class="card-slides-track" onclick="openCardLightbox(this.closest('.doc-card'))">
-                <div class="card-slide active" data-img="IMG/asesmen.jpeg" data-caption-sub="Penilaian Keterampilan Permainan Bola Basket" data-caption="Pengambilan data asesmen unjuk kerja psikomotorik siswa melalui rangkaian sirkuit dribbling, passing berpasangan, dan akurasi shooting bola basket.">
+                <div
+                  class="card-slide active"
+                  data-img="IMG/asesmen.jpeg"
+                  data-caption-sub="Penilaian Keterampilan Permainan Bola Basket"
+                  data-caption="Pengambilan data asesmen unjuk kerja psikomotorik siswa melalui rangkaian sirkuit dribbling, passing berpasangan, dan akurasi shooting bola basket."
+                >
                   <img src="IMG/asesmen.jpeg" alt="Asesmen Bola Basket" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/asesmen2.jpeg" data-caption-sub="Penilaian Atletik Nomor Lari 400 Meter" data-caption="Pengujian performa fisik, kecepatan, dan daya tahan aerobik kardiorespirasi siswa kelas XI melalui pengambilan waktu nomor lari 400 meter di lintasan sekolah.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/asesmen2.jpeg"
+                  data-caption-sub="Penilaian Atletik Nomor Lari 400 Meter"
+                  data-caption="Pengujian performa fisik, kecepatan, dan daya tahan aerobik kardiorespirasi siswa kelas XI melalui pengambilan waktu nomor lari 400 meter di lintasan sekolah."
+                >
                   <img src="IMG/asesmen2.jpeg" alt="Asesmen Atletik Lari" loading="lazy" />
                 </div>
               </div>
@@ -276,7 +293,16 @@
           </div>
 
           <!-- Card PPL 1 - 3: Kunjungan DPL -->
-          <div class="doc-card fade-up" id="card-ppl1-3" data-category="visitasi" data-img="IMG/kunjungan.jpeg" data-badge="Kunjungan DPL" data-title="Kunjungan &amp; Monitoring DPL UNY" data-subtitle="Supervisi Akademik &amp; Penguatan Pedagogis" data-desc="Dosen Pembimbing Lapangan (DPL) Universitas Negeri Yogyakarta melaksanakan visitasi dan koordinasi evaluatif dengan Guru Pamong dalam memantau perkembangan mahasiswa.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl1-3"
+            data-category="visitasi"
+            data-img="IMG/kunjungan.jpeg"
+            data-badge="Kunjungan DPL"
+            data-title="Kunjungan &amp; Monitoring DPL UNY"
+            data-subtitle="Supervisi Akademik &amp; Penguatan Pedagogis"
+            data-desc="Dosen Pembimbing Lapangan (DPL) Universitas Negeri Yogyakarta melaksanakan visitasi dan koordinasi evaluatif dengan Guru Pamong dalam memantau perkembangan mahasiswa."
+          >
             <div class="doc-card-thumb" onclick="openCardLightbox(this.closest('.doc-card'))">
               <span class="doc-card-badge badge-tag-green"><i class="fa-solid fa-user-tie"></i> Supervisi DPL</span>
               <img src="IMG/kunjungan.jpeg" alt="Kunjungan DPL" loading="lazy" />
@@ -300,7 +326,16 @@
           </div>
 
           <!-- Card PPL 1 - 4: Penerjunan PPL -->
-          <div class="doc-card fade-up" id="card-ppl1-4" data-category="visitasi" data-img="IMG/penerjunan.jpeg" data-badge="Penerjunan PPL" data-title="Penerjunan &amp; Orientasi PPL Terbimbing" data-subtitle="Penyambutan Resmi di SMA Negeri 4 Yogyakarta" data-desc="Acara penerjunan resmi dan orientasi lingkungan sekolah bagi mahasiswa PPG Prajabatan PJOK oleh pihak kampus UNY kepada jajaran Kepala Sekolah dan Guru Pamong SMA Negeri 4 Yogyakarta.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl1-4"
+            data-category="visitasi"
+            data-img="IMG/penerjunan.jpeg"
+            data-badge="Penerjunan PPL"
+            data-title="Penerjunan &amp; Orientasi PPL Terbimbing"
+            data-subtitle="Penyambutan Resmi di SMA Negeri 4 Yogyakarta"
+            data-desc="Acara penerjunan resmi dan orientasi lingkungan sekolah bagi mahasiswa PPG Prajabatan PJOK oleh pihak kampus UNY kepada jajaran Kepala Sekolah dan Guru Pamong SMA Negeri 4 Yogyakarta."
+          >
             <div class="doc-card-thumb" onclick="openCardLightbox(this.closest('.doc-card'))">
               <span class="doc-card-badge badge-tag-amber"><i class="fa-solid fa-handshake"></i> Penerjunan PPL</span>
               <img src="IMG/penerjunan.jpeg" alt="Penerjunan PPL" loading="lazy" />
@@ -324,10 +359,19 @@
           </div>
 
           <!-- Card PPL 1 - 5: Pembiasaan Olahraga -->
-          <div class="doc-card fade-up" id="card-ppl1-5" data-category="mengajar" data-img="IMG/olahraga.jpeg" data-badge="Dinamika Kelas" data-title="Aktivitas Pembelajaran PJOK Bersama Siswa" data-subtitle="Pemanasan Terstruktur &amp; Pengkondisian Fisik" data-desc="Pemanasan terstruktur, senam kebugaran jasmani, dan stretching dinamis untuk membangkitkan antusiasme, kebersamaan, dan kesiapan fisik siswa sebelum materi inti pembelajaran.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl1-5"
+            data-category="mengajar"
+            data-img="IMG/olahraga.jpeg"
+            data-badge="Dinamika Kelas"
+            data-title="Aktivitas Pembelajaran PJOK Bersama Siswa"
+            data-subtitle="Pemanasan Terstruktur &amp; Pengkondisian Fisik"
+            data-desc="Pemanasan terstruktur, senam kebugaran jasmani, dan stretching dinamis untuk membangkitkan antusiasme, kebersamaan, dan kesiapan fisik siswa sebelum materi inti pembelajaran."
+          >
             <div class="doc-card-thumb" onclick="openCardLightbox(this.closest('.doc-card'))">
               <span class="doc-card-badge badge-tag-blue"><i class="fa-solid fa-heart-pulse"></i> Pembiasaan Bugar</span>
-              <img src="IMG/olahraga.jpeg" alt="Aktivitas Olahraga Siswa" loading="lazy" />
+              <img src="IMG/PPL_2/Praktik Mengajar 1.jpg" alt="Aktivitas Olahraga Siswa" loading="lazy" />
               <div class="doc-card-overlay">
                 <span class="doc-zoom-pill"><i class="fa-solid fa-expand"></i> Buka Foto Penuh</span>
               </div>
@@ -335,7 +379,7 @@
             <div class="doc-card-body">
               <div class="doc-card-meta">
                 <span><i class="fa-solid fa-calendar-check"></i> Masa PPL Terbimbing</span>
-                <span><i class="fa-solid fa-location-dot"></i> Lapangan Terbuka SMAN 4</span>
+                <span><i class="fa-solid fa-location-dot"></i> Lapangan SMAN 4</span>
               </div>
               <h4 class="doc-card-title">Aktivitas Pembelajaran PJOK Bersama Siswa</h4>
               <p class="doc-card-subtitle">Pemanasan Terstruktur &amp; Pengkondisian Fisik</p>
@@ -396,34 +440,29 @@
             <span class="filter-bar-hint">Menampilkan 6 kartu kegiatan dengan total 12 foto (tersedia kartu slideshow interaktif)</span>
           </div>
           <div class="filter-bar">
-            <button class="filter-btn active" onclick="filterDocs('pane-ppl2', 'all', this)">
-              <i class="fa-solid fa-border-all"></i> Semua <span class="filter-badge">6</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'mengajar', this)">
-              <i class="fa-solid fa-chalkboard-user"></i> Praktik Mengajar <span class="filter-badge">1</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'piket', this)">
-              <i class="fa-solid fa-id-badge"></i> Piket Sekolah <span class="filter-badge">1</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'uks', this)">
-              <i class="fa-solid fa-kit-medical"></i> Layanan UKS <span class="filter-badge">1</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'asts', this)">
-              <i class="fa-solid fa-clipboard-user"></i> Pengawasan ASTS <span class="filter-badge">1</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'lomba', this)">
-              <i class="fa-solid fa-trophy"></i> Kepanitiaan Lomba <span class="filter-badge">1</span>
-            </button>
-            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'penarikan', this)">
-              <i class="fa-solid fa-award"></i> Penarikan PPL <span class="filter-badge">1</span>
-            </button>
+            <button class="filter-btn active" onclick="filterDocs('pane-ppl2', 'all', this)"><i class="fa-solid fa-border-all"></i> Semua <span class="filter-badge">6</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'mengajar', this)"><i class="fa-solid fa-chalkboard-user"></i> Praktik Mengajar <span class="filter-badge">1</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'piket', this)"><i class="fa-solid fa-id-badge"></i> Piket Sekolah <span class="filter-badge">1</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'uks', this)"><i class="fa-solid fa-kit-medical"></i> Layanan UKS <span class="filter-badge">1</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'asts', this)"><i class="fa-solid fa-clipboard-user"></i> Pengawasan ASTS <span class="filter-badge">1</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'lomba', this)"><i class="fa-solid fa-trophy"></i> Kepanitiaan Lomba <span class="filter-badge">1</span></button>
+            <button class="filter-btn" onclick="filterDocs('pane-ppl2', 'penarikan', this)"><i class="fa-solid fa-award"></i> Penarikan PPL <span class="filter-badge">1</span></button>
           </div>
         </div>
 
         <!-- Grid Galeri PPL 2 (6 Kartu Terpadu - Multi-Foto Slideshow) -->
         <div class="doc-grid">
           <!-- Card PPL 2 - 1: Praktik Mengajar (1 Foto) -->
-          <div class="doc-card fade-up" id="card-ppl2-mengajar" data-category="mengajar" data-img="IMG/PPL_2/Praktik Mengajar 1.jpg" data-badge="Praktik Mandiri" data-title="Praktik Mengajar Mandiri PJOK" data-subtitle="Implementasi Pembelajaran Mandiri Lapangan" data-desc="Memimpin pembelajaran PJOK secara mandiri di lapangan terbuka, menerapkan pendekatan student-centered dan metode Direct Instruction &amp; TGfU guna menciptakan suasana belajar yang aktif, aman, dan menyenangkan.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl2-mengajar"
+            data-category="mengajar"
+            data-img="IMG/PPL_2/Praktik Mengajar 1.jpg"
+            data-badge="Praktik Mandiri"
+            data-title="Praktik Mengajar Mandiri PJOK"
+            data-subtitle="Implementasi Pembelajaran Mandiri Lapangan"
+            data-desc="Memimpin pembelajaran PJOK secara mandiri di lapangan terbuka, menerapkan pendekatan student-centered dan metode Direct Instruction &amp; TGfU guna menciptakan suasana belajar yang aktif, aman, dan menyenangkan."
+          >
             <div class="doc-card-thumb" onclick="openCardLightbox(this.closest('.doc-card'))">
               <span class="doc-card-badge badge-tag-orange"><i class="fa-solid fa-chalkboard-user"></i> Praktik Mandiri</span>
               <img src="IMG/PPL_2/Praktik Mengajar 1.jpg" alt="Praktik Mengajar Mandiri PJOK" loading="lazy" />
@@ -438,7 +477,9 @@
               </div>
               <h4 class="doc-card-title">Praktik Mengajar Mandiri PJOK</h4>
               <p class="doc-card-subtitle">Implementasi Pembelajaran Mandiri Lapangan</p>
-              <p class="doc-card-desc">Memimpin pembelajaran PJOK secara mandiri di lapangan terbuka, menerapkan pendekatan student-centered dan metode Direct Instruction &amp; TGfU guna menciptakan suasana belajar yang aktif, aman, dan menyenangkan.</p>
+              <p class="doc-card-desc">
+                Memimpin pembelajaran PJOK secara mandiri di lapangan terbuka, menerapkan pendekatan student-centered dan metode Direct Instruction &amp; TGfU guna menciptakan suasana belajar yang aktif, aman, dan menyenangkan.
+              </p>
               <div class="doc-card-footer">
                 <span style="font-size: 0.8rem; color: var(--text-muted)"><i class="fa-solid fa-camera"></i> 1 Foto Dokumentasi</span>
                 <button class="doc-btn-expand" onclick="openCardLightbox(this.closest('.doc-card'))"><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</button>
@@ -447,16 +488,34 @@
           </div>
 
           <!-- Card PPL 2 - 2: Piket Lobby (2 Foto Slideshow) -->
-          <div class="doc-card fade-up" id="card-ppl2-piket" data-category="piket" data-badge="Piket Sekolah" data-title="Piket Pelayanan &amp; Ketertiban Lobby Sekolah" data-subtitle="Pelayanan Tamu Kedinasan &amp; Penegakan Budaya 5S" data-desc="Bertugas di meja piket lobby utama SMA Negeri 4 Yogyakarta dalam melayani administrasi buku tamu kedinasan, koordinasi perizinan peserta didik, serta menyambut kedatangan siswa dengan senyum, sapa, dan salam.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl2-piket"
+            data-category="piket"
+            data-badge="Piket Sekolah"
+            data-title="Piket Pelayanan &amp; Ketertiban Lobby Sekolah"
+            data-subtitle="Pelayanan Tamu Kedinasan &amp; Penegakan Budaya 5S"
+            data-desc="Bertugas di meja piket lobby utama SMA Negeri 4 Yogyakarta dalam melayani administrasi buku tamu kedinasan, koordinasi perizinan peserta didik, serta menyambut kedatangan siswa dengan senyum, sapa, dan salam."
+          >
             <div class="doc-card-thumb has-slideshow">
               <span class="doc-card-badge badge-tag-cyan"><i class="fa-solid fa-id-badge"></i> Piket Lobby</span>
               <span class="slide-count-badge"><i class="fa-solid fa-layer-group"></i> <span class="current-slide-num">1</span>/2 Foto</span>
 
               <div class="card-slides-track" onclick="openCardLightbox(this.closest('.doc-card'))">
-                <div class="card-slide active" data-img="IMG/PPL_2/Piket Loby 1.jpg" data-caption-sub="Pelayanan Buku Tamu &amp; Administrasi Piket (Foto 1)" data-caption="Bertugas di meja piket lobby utama SMA Negeri 4 Yogyakarta, melayani administrasi buku tamu kedinasan, koordinasi perizinan peserta didik, dan menjaga ketertiban sirkulasi tamu.">
+                <div
+                  class="card-slide active"
+                  data-img="IMG/PPL_2/Piket Loby 1.jpg"
+                  data-caption-sub="Pelayanan Buku Tamu &amp; Administrasi Piket (Foto 1)"
+                  data-caption="Bertugas di meja piket lobby utama SMA Negeri 4 Yogyakarta, melayani administrasi buku tamu kedinasan, koordinasi perizinan peserta didik, dan menjaga ketertiban sirkulasi tamu."
+                >
                   <img src="IMG/PPL_2/Piket Loby 1.jpg" alt="Piket Pelayanan Lobby 1" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/PPL_2/Piket Loby 2.jpg" data-caption-sub="Monitoring Kedisiplinan &amp; Presensi Siswa (Foto 2)" data-caption="Menjaga gerbang dan lobby depan sekolah pada pagi hari, menyambut kehadiran peserta didik dengan budaya 5S (Senyum, Sapa, Salam, Sopan, Santun), serta memantau ketepatan jam hadir siswa.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/PPL_2/Piket Loby 2.jpg"
+                  data-caption-sub="Monitoring Kedisiplinan &amp; Presensi Siswa (Foto 2)"
+                  data-caption="Menjaga gerbang dan lobby depan sekolah pada pagi hari, menyambut kehadiran peserta didik dengan budaya 5S (Senyum, Sapa, Salam, Sopan, Santun), serta memantau ketepatan jam hadir siswa."
+                >
                   <img src="IMG/PPL_2/Piket Loby 2.jpg" alt="Piket Pelayanan Lobby 2" loading="lazy" />
                 </div>
               </div>
@@ -484,7 +543,9 @@
               </div>
               <h4 class="doc-card-title">Piket Pelayanan &amp; Ketertiban Lobby Sekolah</h4>
               <p class="doc-card-subtitle">Pelayanan Tamu Kedinasan &amp; Penegakan Budaya 5S</p>
-              <p class="doc-card-desc">Bertugas di meja piket lobby utama SMA Negeri 4 Yogyakarta dalam melayani administrasi buku tamu kedinasan, koordinasi perizinan peserta didik, serta menyambut kedatangan siswa dengan senyum, sapa, dan salam.</p>
+              <p class="doc-card-desc">
+                Bertugas di meja piket lobby utama SMA Negeri 4 Yogyakarta dalam melayani administrasi buku tamu kedinasan, koordinasi perizinan peserta didik, serta menyambut kedatangan siswa dengan senyum, sapa, dan salam.
+              </p>
               <div class="doc-card-footer">
                 <span style="font-size: 0.8rem; color: var(--accent-cyan)"><i class="fa-solid fa-images"></i> 2 Foto (Slideshow)</span>
                 <button class="doc-btn-expand" onclick="openCardLightbox(this.closest('.doc-card'))"><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</button>
@@ -493,16 +554,34 @@
           </div>
 
           <!-- Card PPL 2 - 3: Cek UKS (2 Foto Slideshow) -->
-          <div class="doc-card fade-up" id="card-ppl2-uks" data-category="uks" data-badge="Layanan UKS" data-title="Layanan Kesehatan &amp; Pertolongan Pertama di UKS" data-subtitle="Pemeriksaan Tanda Vital &amp; Manajemen Obat P3K" data-desc="Memberikan pertolongan pertama (P3K) dan penanganan medis darurat kepada peserta didik yang mengalami keluhan fisik saat pelajaran olahraga, serta melakukan pemantauan tanda-tanda vital dasar siswa di ruang UKS.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl2-uks"
+            data-category="uks"
+            data-badge="Layanan UKS"
+            data-title="Layanan Kesehatan &amp; Pertolongan Pertama di UKS"
+            data-subtitle="Pemeriksaan Tanda Vital &amp; Manajemen Obat P3K"
+            data-desc="Memberikan pertolongan pertama (P3K) dan penanganan medis darurat kepada peserta didik yang mengalami keluhan fisik saat pelajaran olahraga, serta melakukan pemantauan tanda-tanda vital dasar siswa di ruang UKS."
+          >
             <div class="doc-card-thumb has-slideshow">
               <span class="doc-card-badge badge-tag-green"><i class="fa-solid fa-kit-medical"></i> Layanan UKS</span>
               <span class="slide-count-badge"><i class="fa-solid fa-layer-group"></i> <span class="current-slide-num">1</span>/2 Foto</span>
 
               <div class="card-slides-track" onclick="openCardLightbox(this.closest('.doc-card'))">
-                <div class="card-slide active" data-img="IMG/PPL_2/Cek UKS 1.jpg" data-caption-sub="Pertolongan Pertama Medis Siswa di UKS (Foto 1)" data-caption="Memberikan pertolongan pertama (P3K) dan penanganan medis darurat kepada peserta didik yang mengalami keluhan fisik, pusing, atau cedera ringan pada saat jam pelajaran berlangsung.">
+                <div
+                  class="card-slide active"
+                  data-img="IMG/PPL_2/Cek UKS 1.jpg"
+                  data-caption-sub="Pertolongan Pertama Medis Siswa di UKS (Foto 1)"
+                  data-caption="Memberikan pertolongan pertama (P3K) dan penanganan medis darurat kepada peserta didik yang mengalami keluhan fisik, pusing, atau cedera ringan pada saat jam pelajaran berlangsung."
+                >
                   <img src="IMG/PPL_2/Cek UKS 1.jpg" alt="Layanan UKS 1" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/PPL_2/Cek UKS 2.jpg" data-caption-sub="Pemeriksaan Tanda Vital &amp; Manajemen Obat (Foto 2)" data-caption="Melakukan pemantauan tanda-tanda vital dasar siswa (suhu tubuh, denyut nadi, tensi), mengecek ketersediaan perlengkapan obat P3K, serta mencatat rekam riwayat keluhan di buku kontrol UKS.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/PPL_2/Cek UKS 2.jpg"
+                  data-caption-sub="Pemeriksaan Tanda Vital &amp; Manajemen Obat (Foto 2)"
+                  data-caption="Melakukan pemantauan tanda-tanda vital dasar siswa (suhu tubuh, denyut nadi, tensi), mengecek ketersediaan perlengkapan obat P3K, serta mencatat rekam riwayat keluhan di buku kontrol UKS."
+                >
                   <img src="IMG/PPL_2/Cek UKS 2.jpg" alt="Layanan UKS 2" loading="lazy" />
                 </div>
               </div>
@@ -530,7 +609,9 @@
               </div>
               <h4 class="doc-card-title">Layanan Kesehatan &amp; Pertolongan Pertama di UKS</h4>
               <p class="doc-card-subtitle">Pemeriksaan Tanda Vital &amp; Manajemen Obat P3K</p>
-              <p class="doc-card-desc">Memberikan pertolongan pertama (P3K) dan penanganan medis darurat kepada peserta didik yang mengalami keluhan fisik saat pelajaran olahraga, serta melakukan pemantauan tanda-tanda vital dasar siswa di ruang UKS.</p>
+              <p class="doc-card-desc">
+                Memberikan pertolongan pertama (P3K) dan penanganan medis darurat kepada peserta didik yang mengalami keluhan fisik saat pelajaran olahraga, serta melakukan pemantauan tanda-tanda vital dasar siswa di ruang UKS.
+              </p>
               <div class="doc-card-footer">
                 <span style="font-size: 0.8rem; color: #22c55e"><i class="fa-solid fa-images"></i> 2 Foto (Slideshow)</span>
                 <button class="doc-btn-expand" onclick="openCardLightbox(this.closest('.doc-card'))"><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</button>
@@ -539,19 +620,42 @@
           </div>
 
           <!-- Card PPL 2 - 4: Mengawas ASTS (3 Foto Slideshow) -->
-          <div class="doc-card fade-up" id="card-ppl2-asts" data-category="asts" data-badge="Pengawasan ASTS" data-title="Pengawasan Asesmen Sumatif Tengah Semester (ASTS)" data-subtitle="Pengawalan Integritas Ruang Ujian &amp; Administrasi Evaluasi" data-desc="Mengemban amanah sebagai pengawas ruang dalam pelaksanaan ASTS, menjaga ketertiban suasana ujian, membantu penanganan kendala teknis perangkat ujian, serta mengelola verifikasi presensi dan berita acara evaluasi.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl2-asts"
+            data-category="asts"
+            data-badge="Pengawasan ASTS"
+            data-title="Pengawasan Asesmen Sumatif Tengah Semester (ASTS)"
+            data-subtitle="Pengawalan Integritas Ruang Ujian &amp; Administrasi Evaluasi"
+            data-desc="Mengemban amanah sebagai pengawas ruang dalam pelaksanaan ASTS, menjaga ketertiban suasana ujian, membantu penanganan kendala teknis perangkat ujian, serta mengelola verifikasi presensi dan berita acara evaluasi."
+          >
             <div class="doc-card-thumb has-slideshow">
               <span class="doc-card-badge badge-tag-purple"><i class="fa-solid fa-clipboard-user"></i> Pengawas ASTS</span>
               <span class="slide-count-badge"><i class="fa-solid fa-layer-group"></i> <span class="current-slide-num">1</span>/3 Foto</span>
 
               <div class="card-slides-track" onclick="openCardLightbox(this.closest('.doc-card'))">
-                <div class="card-slide active" data-img="IMG/PPL_2/Mengawas ASTS 1.jpg" data-caption-sub="Pengawasan Integritas Ruang Ujian ASTS (Foto 1)" data-caption="Mengemban amanah sebagai pengawas ruang dalam pelaksanaan Asesmen Sumatif Tengah Semester (ASTS), menjaga kejujuran, ketertiban, dan kelancaran ujian para peserta didik.">
+                <div
+                  class="card-slide active"
+                  data-img="IMG/PPL_2/Mengawas ASTS 1.jpg"
+                  data-caption-sub="Pengawasan Integritas Ruang Ujian ASTS (Foto 1)"
+                  data-caption="Mengemban amanah sebagai pengawas ruang dalam pelaksanaan Asesmen Sumatif Tengah Semester (ASTS), menjaga kejujuran, ketertiban, dan kelancaran ujian para peserta didik."
+                >
                   <img src="IMG/PPL_2/Mengawas ASTS 1.jpg" alt="Pengawasan ASTS 1" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/PPL_2/Mengawas ASTS 2.jpg" data-caption-sub="Monitoring Ketenangan &amp; Ketertiban Siswa (Foto 2)" data-caption="Mendampingi peserta didik selama proses pengerjaan soal asesmen sumatif berlangsung, mengantisipasi kendala teknis, serta memastikan suasana ruang kelas senantiasa kondusif dan hening.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/PPL_2/Mengawas ASTS 2.jpg"
+                  data-caption-sub="Monitoring Ketenangan &amp; Ketertiban Siswa (Foto 2)"
+                  data-caption="Mendampingi peserta didik selama proses pengerjaan soal asesmen sumatif berlangsung, mengantisipasi kendala teknis, serta memastikan suasana ruang kelas senantiasa kondusif dan hening."
+                >
                   <img src="IMG/PPL_2/Mengawas ASTS 2.jpg" alt="Pengawasan ASTS 2" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/PPL_2/Mengawas ASTS 3.jpg" data-caption-sub="Administrasi Presensi &amp; Berita Acara (Foto 3)" data-caption="Melakukan verifikasi kartu peserta, penandatanganan berita acara pelaksanaan ujian, serta rekapitulasi pengumpulan naskah dan lembar jawaban asesmen peserta didik dengan cermat.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/PPL_2/Mengawas ASTS 3.jpg"
+                  data-caption-sub="Administrasi Presensi &amp; Berita Acara (Foto 3)"
+                  data-caption="Melakukan verifikasi kartu peserta, penandatanganan berita acara pelaksanaan ujian, serta rekapitulasi pengumpulan naskah dan lembar jawaban asesmen peserta didik dengan cermat."
+                >
                   <img src="IMG/PPL_2/Mengawas ASTS 3.jpg" alt="Pengawasan ASTS 3" loading="lazy" />
                 </div>
               </div>
@@ -580,7 +684,9 @@
               </div>
               <h4 class="doc-card-title">Pengawasan Asesmen Sumatif Tengah Semester (ASTS)</h4>
               <p class="doc-card-subtitle">Pengawalan Integritas Ruang Ujian &amp; Administrasi Evaluasi</p>
-              <p class="doc-card-desc">Mengemban amanah sebagai pengawas ruang dalam pelaksanaan ASTS, menjaga ketertiban suasana ujian, membantu penanganan kendala teknis perangkat ujian, serta mengelola verifikasi presensi dan berita acara evaluasi.</p>
+              <p class="doc-card-desc">
+                Mengemban amanah sebagai pengawas ruang dalam pelaksanaan ASTS, menjaga ketertiban suasana ujian, membantu penanganan kendala teknis perangkat ujian, serta mengelola verifikasi presensi dan berita acara evaluasi.
+              </p>
               <div class="doc-card-footer">
                 <span style="font-size: 0.8rem; color: #a855f7"><i class="fa-solid fa-images"></i> 3 Foto (Slideshow)</span>
                 <button class="doc-btn-expand" onclick="openCardLightbox(this.closest('.doc-card'))"><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</button>
@@ -589,19 +695,42 @@
           </div>
 
           <!-- Card PPL 2 - 5: Panitia Lomba (3 Foto Slideshow) -->
-          <div class="doc-card fade-up" id="card-ppl2-lomba" data-category="lomba" data-badge="Kepanitiaan Lomba" data-title="Kepanitiaan Lomba Olahraga &amp; Kesiswaan" data-subtitle="Penyelenggaraan Event Olahraga &amp; Penjurian Fair Play" data-desc="Terlibat aktif sebagai panitia penyelenggara kegiatan perlombaan kesiswaan di SMA Negeri 4 Yogyakarta, menyiapkan bagan turnamen olahraga, memimpin pertandingan sebagai dewan juri/wasit lapangan, dan evaluasi suksesi acara bersama guru pembina.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl2-lomba"
+            data-category="lomba"
+            data-badge="Kepanitiaan Lomba"
+            data-title="Kepanitiaan Lomba Olahraga &amp; Kesiswaan"
+            data-subtitle="Penyelenggaraan Event Olahraga &amp; Penjurian Fair Play"
+            data-desc="Terlibat aktif sebagai panitia penyelenggara kegiatan perlombaan kesiswaan di SMA Negeri 4 Yogyakarta, menyiapkan bagan turnamen olahraga, memimpin pertandingan sebagai dewan juri/wasit lapangan, dan evaluasi suksesi acara bersama guru pembina."
+          >
             <div class="doc-card-thumb has-slideshow">
               <span class="doc-card-badge badge-tag-amber"><i class="fa-solid fa-trophy"></i> Panitia Lomba</span>
               <span class="slide-count-badge"><i class="fa-solid fa-layer-group"></i> <span class="current-slide-num">1</span>/3 Foto</span>
 
               <div class="card-slides-track" onclick="openCardLightbox(this.closest('.doc-card'))">
-                <div class="card-slide active" data-img="IMG/PPL_2/Panitia Lomba 1.jpeg" data-caption-sub="Persiapan Sarana &amp; Bagan Perlombaan (Foto 1)" data-caption="Terlibat aktif sebagai panitia penyelenggara kegiatan perlombaan kesiswaan di SMA Negeri 4 Yogyakarta, menyiapkan bagan turnamen olahraga, dan mengatur sarana perlengkapan lapangan.">
+                <div
+                  class="card-slide active"
+                  data-img="IMG/PPL_2/Panitia Lomba 1.jpeg"
+                  data-caption-sub="Persiapan Sarana &amp; Bagan Perlombaan (Foto 1)"
+                  data-caption="Terlibat aktif sebagai panitia penyelenggara kegiatan perlombaan kesiswaan di SMA Negeri 4 Yogyakarta, menyiapkan bagan turnamen olahraga, dan mengatur sarana perlengkapan lapangan."
+                >
                   <img src="IMG/PPL_2/Panitia Lomba 1.jpeg" alt="Panitia Lomba 1" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/PPL_2/Panitia Lomba 2.jpeg" data-caption-sub="Koordinasi Teknis Wasit &amp; Dewan Juri (Foto 2)" data-caption="Mengawal jalannya kompetisi pertandingan sebagai dewan juri/wasit lapangan, menegakkan aturan permainan secara adil (fair play), dan mencatat hasil skor pertandingan dengan objektif.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/PPL_2/Panitia Lomba 2.jpeg"
+                  data-caption-sub="Koordinasi Teknis Wasit &amp; Dewan Juri (Foto 2)"
+                  data-caption="Mengawal jalannya kompetisi pertandingan sebagai dewan juri/wasit lapangan, menegakkan aturan permainan secara adil (fair play), dan mencatat hasil skor pertandingan dengan objektif."
+                >
                   <img src="IMG/PPL_2/Panitia Lomba 2.jpeg" alt="Panitia Lomba 2" loading="lazy" />
                 </div>
-                <div class="card-slide" data-img="IMG/PPL_2/Panitia Lomba 3.jpeg" data-caption-sub="Dokumentasi &amp; Evaluasi Suksesi Lomba (Foto 3)" data-caption="Mengabadikan momen kebersamaan seluruh tim panitia lomba, rekapitulasi data juara, serta evaluasi menyeluruh bersama guru pembina demi keberhasilan agenda kesiswaan sekolah.">
+                <div
+                  class="card-slide"
+                  data-img="IMG/PPL_2/Panitia Lomba 3.jpeg"
+                  data-caption-sub="Dokumentasi &amp; Evaluasi Suksesi Lomba (Foto 3)"
+                  data-caption="Mengabadikan momen kebersamaan seluruh tim panitia lomba, rekapitulasi data juara, serta evaluasi menyeluruh bersama guru pembina demi keberhasilan agenda kesiswaan sekolah."
+                >
                   <img src="IMG/PPL_2/Panitia Lomba 3.jpeg" alt="Panitia Lomba 3" loading="lazy" />
                 </div>
               </div>
@@ -630,7 +759,10 @@
               </div>
               <h4 class="doc-card-title">Kepanitiaan Lomba Olahraga &amp; Kesiswaan</h4>
               <p class="doc-card-subtitle">Penyelenggaraan Event Olahraga &amp; Penjurian Fair Play</p>
-              <p class="doc-card-desc">Terlibat aktif sebagai panitia penyelenggara kegiatan perlombaan kesiswaan di SMA Negeri 4 Yogyakarta, menyiapkan bagan turnamen olahraga, memimpin pertandingan sebagai dewan juri/wasit lapangan, dan evaluasi suksesi acara bersama guru pembina.</p>
+              <p class="doc-card-desc">
+                Terlibat aktif sebagai panitia penyelenggara kegiatan perlombaan kesiswaan di SMA Negeri 4 Yogyakarta, menyiapkan bagan turnamen olahraga, memimpin pertandingan sebagai dewan juri/wasit lapangan, dan evaluasi suksesi acara
+                bersama guru pembina.
+              </p>
               <div class="doc-card-footer">
                 <span style="font-size: 0.8rem; color: #f59e0b"><i class="fa-solid fa-images"></i> 3 Foto (Slideshow)</span>
                 <button class="doc-btn-expand" onclick="openCardLightbox(this.closest('.doc-card'))"><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</button>
@@ -639,7 +771,16 @@
           </div>
 
           <!-- Card PPL 2 - 6: Penarikan PPL (1 Foto) -->
-          <div class="doc-card fade-up" id="card-ppl2-penarikan" data-category="penarikan" data-img="IMG/PPL_2/Penarikan PPL.jpeg" data-badge="Penarikan PPL" data-title="Seremoni Pelepasan &amp; Penarikan PPL 2" data-subtitle="Penutupan Resmi Program Pengalaman Lapangan 2" data-desc="Seremoni resmi pelepasan dan penarikan mahasiswa PPL 2 PPG Prajabatan PJOK UNY oleh DPL bersama jajaran pimpinan SMA Negeri 4 Yogyakarta atas tuntasnya program pengabdian.">
+          <div
+            class="doc-card fade-up"
+            id="card-ppl2-penarikan"
+            data-category="penarikan"
+            data-img="IMG/PPL_2/Penarikan PPL.jpeg"
+            data-badge="Penarikan PPL"
+            data-title="Seremoni Pelepasan &amp; Penarikan PPL 2"
+            data-subtitle="Penutupan Resmi Program Pengalaman Lapangan 2"
+            data-desc="Seremoni resmi pelepasan dan penarikan mahasiswa PPL 2 PPG Prajabatan PJOK UNY oleh DPL bersama jajaran pimpinan SMA Negeri 4 Yogyakarta atas tuntasnya program pengabdian."
+          >
             <div class="doc-card-thumb" onclick="openCardLightbox(this.closest('.doc-card'))">
               <span class="doc-card-badge badge-tag-orange"><i class="fa-solid fa-award"></i> Penarikan PPL</span>
               <img src="IMG/PPL_2/Penarikan PPL.jpeg" alt="Penarikan PPL 2" loading="lazy" />
@@ -946,9 +1087,7 @@
         const activePane = document.querySelector(".doc-tab-pane.active");
         if (!activePane) return [];
 
-        const visibleCards = Array.from(activePane.querySelectorAll(".doc-card")).filter(
-          (card) => card.style.display !== "none" && window.getComputedStyle(card).display !== "none"
-        );
+        const visibleCards = Array.from(activePane.querySelectorAll(".doc-card")).filter((card) => card.style.display !== "none" && window.getComputedStyle(card).display !== "none");
 
         const photos = [];
         visibleCards.forEach((card) => {
@@ -989,9 +1128,7 @@
 
         // Cari slide aktif saat ini di dalam kartu
         const activeSlide = card.querySelector(".card-slide.active");
-        const activeImg = activeSlide
-          ? (activeSlide.getAttribute("data-img") || activeSlide.querySelector("img")?.src)
-          : (card.getAttribute("data-img") || card.querySelector("img")?.src);
+        const activeImg = activeSlide ? activeSlide.getAttribute("data-img") || activeSlide.querySelector("img")?.src : card.getAttribute("data-img") || card.querySelector("img")?.src;
 
         currentLightboxIndex = lightboxPhotoList.findIndex((p) => p.cardRef === card && p.img === activeImg);
         if (currentLightboxIndex === -1) {
@@ -1065,4 +1202,3 @@
     </script>
   </body>
 </html>
-
