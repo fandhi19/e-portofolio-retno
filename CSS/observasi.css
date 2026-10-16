@@ -236,9 +236,11 @@ a {
   gap: 10px;
 }
 .dropdown-content a:hover,
+.dropdown-content a.active,
 .dropdown-content a.active-drop {
   background: var(--primary-orange);
   transform: translateX(5px);
+  color: #fff;
 }
 
 /* Hamburger */
